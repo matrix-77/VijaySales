@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Sales & Sanitary Wares | Premium Granite & Tile Dealers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+
+        :root {
+            --primary: #c5a059; /* Gold/Brass accent */
+            --dark: #121212;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80&w=1600');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .accent-text { color: var(--primary); }
+        .bg-accent { background-color: var(--primary); }
+        
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sticky-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(18, 18, 18, 0.9);
+        }
+
+        .custom-shadow {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive spacing */
+        section { padding: 4rem 1.5rem; }
+        @media (min-width: 768px) { section { padding: 6rem 4rem; } }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav fixed w-full z-50 text-white py-4 px-6 md:px-12 flex justify-between items-center custom-shadow">
+        <div class="text-xl font-bold tracking-tighter uppercase italic">
+            <a href="#home">Vijay <span class="accent-text">Sales</span></a>
+        </div>
+        <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-widest">
+            <a href="#home" class="hover:text-[#c5a059] transition">Home</a>
+            <a href="#products" class="hover:text-[#c5a059] transition">Products</a>
+            <a href="#gallery" class="hover:text-[#c5a059] transition">Gallery</a>
+            <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
+        </div>
+        <a href="tel:08085761999" class="bg-accent text-white px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 hover:bg-opacity-90 transition">
+            <i class="fas fa-phone"></i> CALL NOW
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-6">
+        <div class="max-w-4xl">
+            <h4 class="uppercase tracking-[0.3em] text-sm mb-4 accent-text font-bold">Luxury Surfaces & Fixtures</h4>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Elevate Your Home with <span class="italic">Vijay Sales</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Premium Granite, Designer Tiles, and High-End Sanitary Ware for Jabalpur's most beautiful homes.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" class="bg-accent text-white px-10 py-4 rounded-md font-bold hover:bg-opacity-80 transition uppercase tracking-widest text-xs">Explore Collections</a>
+                <a href="#contact" class="border border-white text-white px-10 py-4 rounded-md font-bold hover:bg-white hover:text-black transition uppercase tracking-widest text-xs">Visit Showroom</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Our Expertise</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Granite -->
+                <div class="product-card bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509448271434-59e656f91167?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8R3Jhbml0ZXxlbnwwfDB8MHx8fDA%3D')"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3">Granite Supply</h3>
+                        <p class="text-gray-600 mb-6">Sourced from the finest quarries, offering durability and natural elegance for your kitchen counters and flooring.</p>
+                        <span class="text-xs uppercase font-bold tracking-widest accent-text">View Textures →</span>
+                    </div>
+                </div>
+
+                <!-- Tiles -->
+                <div class="product-card bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1708540084677-dc5838b37627?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8VGlsZXN8ZW58MHwwfDB8fHww')"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3">Designer Tiles</h3>
+                        <p class="text-gray-600 mb-6">From modern vitrified tiles to ornate ceramics, we have designs that suit every style and space.</p>
+                        <span class="text-xs uppercase font-bold tracking-widest accent-text">Latest Trends →</span>
+                    </div>
+                </div>
+
+                <!-- Sanitary Ware -->
+                <div class="product-card bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/6316056/pexels-photo-6316056.jpeg?_gl=1*3iwjq9*_ga*NjE4MDk2OTM2LjE3NzM2NjE5MDY.*_ga_8JE65Q40S6*czE3NzM3NTA5MDAkbzIkZzEkdDE3NzM3NTEzODQkajYwJGwwJGgw')"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3">Sanitary Ware</h3>
+                        <p class="text-gray-600 mb-6">High-quality faucets, basins, and bathroom fixtures that combine luxury aesthetics with performance.</p>
+                        <span class="text-xs uppercase font-bold tracking-widest accent-text">Explore Fixtures →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Showroom Section -->
+    <section id="gallery" class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-2">The Showroom</h2>
+                    <p class="text-gray-400">Glimpses of our curated collection in Jabalpur.</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <button onclick="toggleGallery()" class="text-xs uppercase tracking-widest border-b border-accent pb-2 hover:text-accent transition">View Instagram</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="lg:col-span-2 lg:row-span-2 overflow-hidden rounded-lg group">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwep8dyEWQqoJRvcE5z0XmmAEl6tTvht1W844VznDRQvu3swA5AjuFaPEGzNJyJLpUHxWxpPOTq5cvB327KIJlRasp-9Ne4U7Px4UfHfCnzfJeQBAvDfxlBzc10Oco4oP4zCgXFo=w408-h544-k-no" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Faucet Display">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.pexels.com/photos/5507251/pexels-photo-5507251.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700" alt="Tile Samples">
+                </div>
+                <div class="overflow-hidden rounded-lg group">
+                    <img src="https://images.pexels.com/photos/6920614/pexels-photo-6920614.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700" alt="Modern Bathroom">
+                </div>
+                <div class="lg:col-span-2 overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1611066415943-0a8cd437788c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtpdGNoZW4lMjBncmFuaXRlfGVufDB8MHwwfHx8MA%3D%3D" class="w-full h-64 object-cover group-hover:scale-110 transition duration-700" alt="Kitchen Granite">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info & Contact Section -->
+    <section id="contact" class="bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <!-- Information -->
+            <div>
+                <h2 class="text-4xl font-bold mb-8 italic">Find Us</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="text-2xl accent-text"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <a href="https://mappls.com/ux5fm8"><h4 class="font-bold text-lg mb-1"><u>Our Address</u></h4></a>
+                            <p class="text-gray-600">Gurbani Building, 416, Opposite Nagpal Garden, Beside Khatwani Renault, Madan Mahal, Jabalpur, Madhya Pradesh 482001</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="text-2xl accent-text"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">Business Hours</h4>
+                            <p class="text-gray-600"><i class="fa-regular fa-calendar-check"> Weekdays : 10:30 - 21:00</i></p>
+                            <p class="text-red-500 font-bold mt-1 text-sm uppercase"><i class="fa-regular fa-calendar-xmark"> Weekends : Closed</i></p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-6">
+                        <div class="text-2xl accent-text"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <a href="tel:+918085761999"><h4 class="font-bold text-lg mb-1"><u>Call Us</u></h4></a>
+                            <p class="text-gray-600 font-semibold text-xl">+91 8085761999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <h4 class="font-bold text-sm uppercase tracking-widest mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-accent hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-accent hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-accent hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-gray-50 p-8 md:p-12 rounded-2xl shadow-sm">
+                <h3 class="text-2xl font-bold mb-6">Inquiry For Your Project</h3>
+                <form id="inquiryForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Full Name" class="w-full p-4 rounded-lg border border-gray-200 focus:border-accent outline-none transition" required>
+                        <input type="tel" placeholder="Phone Number" class="w-full p-4 rounded-lg border border-gray-200 focus:border-accent outline-none transition" required>
+                    </div>
+                    <input type="text" placeholder="Email" class="w-full p-4 rounded-lg border border-gray-200 focus:border-accent outline-none transition" required>
+                    <select class="w-full p-4 rounded-lg border border-gray-200 focus:border-accent outline-none transition">
+                        <option>Interested in Granite</option>
+                        <option>Interested in Tiles</option>
+                        <option>Interested in Sanitary Ware</option>
+                        <option>General Inquiry</option>
+                    </select>
+                    <textarea rows="4" placeholder="How can we help you?" class="w-full p-4 rounded-lg border border-gray-200 focus:border-accent outline-none transition"></textarea>
+                    <button type="submit" class="w-full bg-accent text-white py-4 rounded-lg font-bold hover:bg-opacity-90 transition">SEND INQUIRY</button>
+                </form>
+                <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg text-center font-bold">
+                    Thank you! We'll get back to you shortly.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-500 py-12 px-6 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <div class="text-white text-lg font-bold mb-1 italic">VIJAY SALES</div>
+                <p class="text-sm">Granite Dealers | Tile Dealers | Sanitary Ware</p>
+            </div>
+            <div class="text-sm text-center">
+                &copy; <span id="year"></span> Vijay Sales and Sanitary Wares. All Rights Reserved.
+            </div>
+            <div class="flex gap-6 text-xs uppercase tracking-widest font-bold">
+                <a href="#" class="hover:text-white transition">Privacy</a>
+                <a href="#" class="hover:text-white transition">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form Handling
+        const form = document.getElementById('inquiryForm');
+        const success = document.getElementById('successMessage');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            form.classList.add('opacity-50', 'pointer-events-none');
+            // Simulate API call
+            setTimeout(() => {
+                form.reset();
+                form.classList.add('hidden');
+                success.classList.remove('hidden');
+            }, 1000);
+        });
+        // Simple Toggle for Gallery (just a placeholder for logic)
+        function toggleGallery() {
+            console.log("Gallery expand logic would go here.");
+            document.getElementById('gallery').scrollIntoView();
+        }
+
+        // Navbar opacity on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2');
+            }
+        });
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+    </script>
+</body>
+</html>
